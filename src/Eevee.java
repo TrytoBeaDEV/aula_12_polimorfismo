@@ -1,15 +1,17 @@
 public class Eevee {
-    private String tipo ;
-    private int altura , HP ;
-    private double peso ;
+    private String tipo;
+    private int altura, HP;
+    private double peso;
 
-    public String ataque(){
+    public String ataque() {
         return "Ataque rápido";
     }
-    public String defesa(){
-        return "Desvio" ;
+
+    public String defesa() {
+        return "Desvio";
     }
-    public String especial(){
-        return "Tri-ataque" ;
+
+    public String especial() {
+        return "Tri-ataque";
     }
 }
