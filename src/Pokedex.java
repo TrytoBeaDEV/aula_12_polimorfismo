@@ -1,61 +1,49 @@
 public class Pokedex {
     public static void main(String[] args) throws Exception {
-        Eevee e = new Eevee();
-        Jolteon j = new Jolteon();
-        Espeon es = new Espeon();
-        Floreon f = new Floreon();
-        Glaceon g = new Glaceon();
-        Leafeon l = new Leafeon();
-        Sylveon s = new Sylveon();
-        Umbreon u = new Umbreon();
-        Vaporeon v = new Vaporeon();
 
-        System.out.println("Eu sou Eevee  ");
-        System.out.println("Ataque:  " + e.ataque());
-        System.out.println("Defesa  " + e.defesa());
-        System.out.println("Especial  " + e.especial());
+        Eevee e = new Eevee("Normal", 30, 55, 6.5);
+        e.imprimir();
 
         System.out.println("");
 
-        System.out.println("Eu sou Jolteon ");
-        System.out.println("Ataque:  " + j.ataque());
-        System.out.println("Defesa  " + j.defesa());
-        System.out.println("Especial  " + j.especial());
+        Jolteon j = new Jolteon("Elétrico", 80, 65, 24.5);
 
-        System.out.println("Eu sou Espeon   ");
-        System.out.println("Ataque:  " + es.ataque());
-        System.out.println("Defesa  " + es.defesa());
-        System.out.println("Especial  " + es.especial());
+        System.out.println("");
 
-        System.out.println("Eu sou Floreon  ");
-        System.out.println("Ataque:  " + f.ataque());
-        System.out.println("Defesa  " + f.defesa());
-        System.out.println("Especial  " + f.especial());
+        Espeon es = new Espeon("Psíquico", 90, 65, 26.5);
+        es.imprimir();
 
-        System.out.println("Eu sou Glaceon  ");
-        System.out.println("Ataque:  " + g.ataque());
-        System.out.println("Defesa  " + g.defesa());
-        System.out.println("Especial  " + g.especial());
+        System.out.println(" ");
 
-        System.out.println("Eu sou Leafeon  ");
-        System.out.println("Ataque:  " + l.ataque());
-        System.out.println("Defesa  " + l.defesa());
-        System.out.println("Especial  " + l.especial());
+        Floreon f = new Floreon("Fogo", 90, 65, 25);
+        f.imprimir();
 
-        System.out.println("Eu sou Sylveon  ");
-        System.out.println("Ataque:  " + s.ataque());
-        System.out.println("Defesa  " + s.defesa());
-        System.out.println("Especial  " + s.especial());
+        System.out.println(" ");
 
-        System.out.println("Eu sou Umbreon  ");
-        System.out.println("Ataque:  " + u.ataque());
-        System.out.println("Defesa  " + u.defesa());
-        System.out.println("Especial  " + u.especial());
+        Leafeon l = new Leafeon("Planta", 1, 65, 25.5);
+        l.imprimir();
 
-        System.out.println("Eu sou Vaporeon  ");
-        System.out.println("Ataque:  " + v.ataque());
-        System.out.println("Defesa  " + v.defesa());
-        System.out.println("Especial  " + v.especial());
+        System.out.println(" ");
+
+        Sylveon s = new Sylveon("Fada", 1, 95, 23.5);
+        s.imprimir();
+
+        System.out.println(" ");
+
+        Umbreon u = new Umbreon("Sombrio", 1, 95, 27);
+        u.imprimir();
+
+        System.out.println(" ");
+
+        Vaporeon v = new Vaporeon("Água", 1, 130, 29);
+        v.imprimir();
+
+        System.out.println("");
+
+        Glaceon g = new Glaceon("Gelo", 80, 65, 25.9);
+        g.imprimir();
+
+        System.out.println(" ");
 
     }
 }

@@ -1,4 +1,9 @@
 public class Floreon extends Eevee {
+    public Floreon(String tipo, int altura, int hP, double peso) {
+        super(tipo, altura, hP, peso);
+
+    }
+
     @Override
     public String ataque() {
         return "Flash Fire";
@@ -12,6 +17,19 @@ public class Floreon extends Eevee {
     @Override
     public String especial() {
         return "Fire Blast";
+    }
+
+    // metodo imprimir
+    @Override
+    public void imprimir() {
+        System.out.println("Floreon ");
+        System.out.println("  tipo='" + getTipo() + '\'');
+        System.out.println("  altura=" + getAltura());
+        System.out.println("  HP=" + getHP());
+        System.out.println("  peso=" + getPeso());
+        System.out.println("  Ataque: " + ataque());
+        System.out.println("  Defesa: " + defesa());
+        System.out.println("  Especial: " + especial());
     }
 
 }
